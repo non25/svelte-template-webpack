@@ -1,0 +1,6 @@
+@function pxrem($px) {
+	@return #{$px / $font-size + rem};
+}
+
+$font-size: 16;
+$margin: pxrem(8);
