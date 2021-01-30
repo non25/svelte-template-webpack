@@ -9,6 +9,7 @@
     "sass": "^1.32.5",
     "svelte": "^3.32.1",
     "svelte-loader": "rixo/svelte-loader#hmr-bubbled",
+    "svelte-pathfinder": "^2.2.0",
     "svelte-preprocess": "^4.6.5",
     "webpack": "^5.19.0",
     "webpack-cli": "^4.4.0",
