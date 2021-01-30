@@ -1,13 +1,22 @@
+<script context="module">
+	export function prep(string) {
+		return `${string} nah`;
+	}
+</script>
+
 <script>
 	import { path } from 'svelte-pathfinder';
 	import { name } from './store.js';
 	import { adjust } from './helpers.js';
+
+	export let someprop = 'yes';
 </script>
 
 <main>
 	<h1>Hello {adjust($name)}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 	<button on:click={() => $path = '/'}>Go back</button>
+	<div>{someprop}</div>
 </main>
 
 <style lang="scss">

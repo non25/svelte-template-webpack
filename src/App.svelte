@@ -1,8 +1,6 @@
 <script>
 	import { path, goto } from 'svelte-pathfinder';
-	import OtherComponent from './OtherComponent.svelte';
-
-	$: console.log($path);
+	import OtherComponent, { prep } from './OtherComponent.svelte';
 </script>
 
 <button on:click={() => goto('/other')}>
@@ -10,5 +8,5 @@
 </button>
 
 {#if $path.pattern('/other')}
-	<OtherComponent />
+	<OtherComponent someprop={prep('lul')} />
 {/if}
