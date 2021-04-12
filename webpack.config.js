@@ -1,3 +1,4 @@
+const cssModules = require('svelte-preprocess-cssmodules');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
@@ -31,7 +32,8 @@ module.exports = {
 							dev: !prod
 						},
 						emitCss: prod,
-						hotReload: !prod
+						hotReload: !prod,
+						preprocess: [cssModules()],
 					}
 				}
 			},
