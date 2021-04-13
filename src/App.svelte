@@ -1,8 +1,13 @@
 <script>
+	import { blue } from './style.module.css';
 	import Button from './Button.svelte';
 
 	let bright = false;
 </script>
+
+<div class={blue}>Testing static external class</div>
+<div class:blue={bright}>Testing external class in directive</div>
+<div class={bright ? blue : ''}>Testing external class in ternary</div>
 
 <div class="future" class:is-bright={bright}>Toggle me!</div>
 
