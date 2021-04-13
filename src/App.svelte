@@ -8,7 +8,9 @@
 
 <Button class="right" on:click={() => bright = !bright}>Toggle</Button>
 
-<style module>
+<style lang="scss" module>
+	$red: hsl(0, 50%, 70%);
+
 	.future {
 		margin-top: 1rem;
 		margin-bottom: 1rem;
@@ -18,7 +20,7 @@
 	}
 
 	.is-bright {
-		color: hsl(0, 50%, 70%);
+		color: $red;
 	}
 
 	/* this should work ? */
